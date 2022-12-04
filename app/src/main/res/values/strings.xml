@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Control</string>
+
+    <!--    MainActivity -->
+    <string name="camera_permission_error">Нет прав на использование камеры!</string>
+
+    <!--    LoginFragment -->
+    <string name="l_description">Используйте учётные данные, выданные вам супервайзером.</string>
+    <string name="l_form_email_hint">Электронная почта</string>
+    <string name="l_form_password_hint">Пароль</string>
+    <string name="l_form_submit_button">Войти</string>
+    <string name="l_restore_password_hint">Если вы забыли пароль, то обратитесь к супервайзеру для его восстановления.</string>
+    <string name="l_validation_not_empty">Поля электронной почты или пароля не должны быть пустыми!</string>
+    <string name="l_login_successful">Вы успешно авторизовались</string>
+    <string name="l_login_failed">Ошибка при авторизации</string>
+
+    <!--    MemberMainFragment -->
+    <string name="m_user_info_introduction">Вы успешно авторизованы. Можете приступать к работе.</string>
+    <string name="m_user_info_email">Авторизованы как:</string>
+    <string name="m_report_button">Отправить отчёт</string>
+    <string name="m_logout_button">Завершить смену</string>
+
+    <!--   ReportPreviewFragment -->
+    <string name="r_user_image_preview">User image preview</string>
+    <string name="r_cancel_button">Отмена</string>
+    <string name="r_reset_button">Сбросить</string>
+    <string name="r_submit_button">Подтвердить</string>
+
+    <!--   SupervisorMainFragment -->
+    <string name="s_reports_button">Отчёты сотрудников</string>
+    <string name="s_register_user">Зарегистрировать сотрудника</string>
+
+    <!--   User information -->
+    <string name="info_address">Домашний адрес:</string>
+    <string name="info_birthday">Дата рождения:</string>
+    <string name="info_phone">Номер телефона:</string>
+    <string name="info_email">Электронная почта:</string>
+    <string name="info_iin">ИИН:</string>
+    <string name="info_username">ФИО:</string>
+
+    <!--   ReportsFragment -->
+    <string name="rep_title">Отчёты сотрудников</string>
+    <string name="rep_cancel_button">Вернуться</string>
+
+    <!--   RegisterUserFragment -->
+    <string name="reg_title">Регистрация сотрудников</string>
+    <string name="reg_submit_button">Зарегистрировать</string>
+    <string name="reg_cancel_button">Вернуться</string>
+    <string name="f_last_name_hint">Фамилия</string>
+    <string name="f_first_name_hint">Имя</string>
+    <string name="f_second_name_hint">Отчество</string>
+    <string name="f_email_hint">Электронная почта</string>
+    <string name="f_password_hint">Пароль для сотрудника</string>
+    <string name="f_phone_hint">Номер телефона</string>
+    <string name="f_iin_hint">ИИН сотрудника</string>
+    <string name="f_birthday_hint">Дата рождения</string>
+    <string name="f_address_hint">Домашний адрес</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="member_reports">Отчёты сотрудника</string>
+    <string name="close_detail_report">Закрыть отчёт</string>
+
+</resources>

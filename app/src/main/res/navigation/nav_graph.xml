@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.amir.ctrl.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_memberMainFragment2"
+            app:destination="@id/memberMainFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_supervisorMainFragment2"
+            app:destination="@id/supervisorMainFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/supervisorMainFragment"
+        android:name="com.amir.ctrl.fragments.supervisor.SupervisorMainFragment"
+        android:label="fragment_supervisor_main"
+        tools:layout="@layout/fragment_supervisor_main" >
+        <action
+            android:id="@+id/action_supervisorMainFragment_to_reportsFragment2"
+            app:destination="@id/reportsFragment" />
+        <action
+            android:id="@+id/action_supervisorMainFragment_to_registerUserFragment2"
+            app:destination="@id/registerUserFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="uuid"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_supervisorMainFragment_to_loginFragment2"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/supervisorMainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberMainFragment"
+        android:name="com.amir.ctrl.fragments.member.MemberMainFragment"
+        android:label="fragment_member_main"
+        tools:layout="@layout/fragment_member_main" >
+        <action
+            android:id="@+id/action_memberMainFragment_to_reportPreviewFragment2"
+            app:destination="@id/reportPreviewFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="uuid"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_memberMainFragment_to_loginFragment2"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/memberMainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportPreviewFragment"
+        android:name="com.amir.ctrl.fragments.member.ReportPreviewFragment"
+        android:label="fragment_report_preview"
+        tools:layout="@layout/fragment_report_preview" />
+    <fragment
+        android:id="@+id/registerUserFragment"
+        android:name="com.amir.ctrl.fragments.supervisor.RegisterUserFragment"
+        android:label="fragment_register_user"
+        tools:layout="@layout/fragment_register_user" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.amir.ctrl.fragments.supervisor.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" >
+        <action
+            android:id="@+id/action_reportsFragment_to_memberReportsFragment"
+            app:destination="@id/memberReportsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memberReportsFragment"
+        android:name="com.amir.ctrl.fragments.supervisor.MemberReportsFragment"
+        android:label="fragment_member_reports"
+        tools:layout="@layout/fragment_member_reports" >
+        <action
+            android:id="@+id/action_memberReportsFragment_to_reportDetailFragment"
+            app:destination="@id/reportDetailFragment" />
+        <argument
+            android:name="uuid"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user"
+            app:argType="com.amir.ctrl.data.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportDetailFragment"
+        android:name="com.amir.ctrl.fragments.supervisor.ReportDetailFragment"
+        android:label="fragment_report_detail"
+        tools:layout="@layout/fragment_report_detail" >
+        <argument
+            android:name="report"
+            app:argType="com.amir.ctrl.data.Report" />
+    </fragment>
+</navigation>

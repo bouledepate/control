@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944235325031",
+    "project_id": "ctrl-797b0",
+    "storage_bucket": "ctrl-797b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944235325031:android:67496a964fb7720c9b16c2",
+        "android_client_info": {
+          "package_name": "com.amir.ctrl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944235325031-3k08kr6nqrjom38m1gl65fpcjvfm61vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOE0vrdsSyj_VBRQTTcGkfWxQAR7KumgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944235325031-3k08kr6nqrjom38m1gl65fpcjvfm61vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
